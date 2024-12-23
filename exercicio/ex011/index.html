@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon - Copia.ico" type="image/x-icon">
+    <title>Midias em html5</title>
+    <body style="background-color: #a41818;"></body>
+        <h1>Bem-vindo ao meu site!</h1>
+        <p>Este é um exemplo de fundo colorido.</p>
+    </body>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png"  type="image/png">
+<img src="imagens/foto-g.png" alt="imagen flexivel">
+
+    </picture>
+    <h1>REPRODUZIR AUDIO</h1>
+    <p>Vamos reproduzir audios em HTML5.</p>
+   <audio preload="auto" autoplay controls>
+   <source src="midia/mp3.mp3" type="audio/mpeg">
+   <source src="midia/happy-mistake.mp3.mp3" type="audio /ogg">
+   <p>Infelismente seu navegador nao consegue reprodueri audioa <a href="midia/happy-mistake.mp3.mp3">clique aqui para baixar audio mp3</a></p>
+
+   </audio>
+    
+</body>
+</html>
