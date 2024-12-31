@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        td,th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        tr.destaque{
+            background-color: yellow;
+        }
+    col.cnome {
+        background-color: bisque;
+    }
+
+    col.cidade{
+        background-color: aqua;
+    }
+    col.csexo{
+        background-color: blue;
+    }
+    col.profissao{
+        background-color: blue;
+    }
+  
+        
+    </style>
+</head>
+<body>
+    <h1>Exercico de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="profissao">
+        
+        </colgroup>
+        <caption>Cadastro</caption>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissao</th>
+    </tr>
+    <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    <tr>
+        <td>Claudio</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    <tr class="destaque">
+        <td>Gustavo</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    <tr>
+        <td>Helio</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    <tr>
+        <td>MARIA</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    <tr>
+        <td>OTAVIO</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    </table>
+    
+</body>
+</html>
