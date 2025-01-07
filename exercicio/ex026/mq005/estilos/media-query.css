@@ -1,0 +1,27 @@
+@charset "UTF-8" ;
+
+/* TODAS AS DEMAIS MIDIAS*/
+
+/* TYPICAL DEVICE BREAKPOINTS
+pequenas telas : ate 600px
+celular: 576px a 768px
+tablet: 768px a 992px
+desktop: 992px a 1200px
+grandes telas acima de:Acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu >ul >li {
+        display: inline-block;
+    }
+    main {
+        width: 768px;
+    }
+
+}
