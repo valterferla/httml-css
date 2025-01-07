@@ -22,6 +22,7 @@ span#burguer{
     display: block;
     text-align: center;
     padding: 10px;
+    cursor: pointer;
 }
 span#burguer:hover{
     background-color: white;
@@ -54,7 +55,7 @@ main {
     border-radius: 10px;
     margin-top: 10px;
 }
-article >h2{
+article > h2 {
     text-align: center;
     padding-bottom: 20px;
 

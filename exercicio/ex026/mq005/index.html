@@ -36,20 +36,37 @@
         </article>
     </main>
     <script>
+        const burguer = document.getElementById('burguer');
+const itens = document.getElementById('itens');
 
-        function mudouTamanho() {
-        if (window.innerwidth >= 768px) {
-            itens.style.display = 'block'
+function clickMenu() {
+    // Alterna a visibilidade do menu para telas menores
+    if (window.innerWidth < 768) {
+        if (itens.style.display === 'block') {
+            itens.style.display = 'none';
         } else {
-        itens.style.display = 'none'
-    }
-
+            itens.style.display = 'block';
         }
-        function clickMenu() {
-         if  ( itens.style.display == 'block'){
-            itens.style.display = 'none'
-             } else {
-             itens.style.display= 'block'} }
+    }
+}
+
+function mudouTamanho() {
+    // Garante que o menu está visível em telas grandes e oculto em telas pequenas
+    if (window.innerWidth >= 768) {
+        itens.style.display = 'block'; // Mostra o menu
+        burguer.style.display = 'none'; // Oculta o ícone
+    } else {
+        itens.style.display = 'none'; // Oculta o menu
+        burguer.style.display = 'block'; // Mostra o ícone
+    }
+}
+
+// Configuração inicial ao carregar a página
+window.onload = mudouTamanho;
+
+// Adaptação ao redimensionar a tela
+window.onresize = mudouTamanho;
+
     </script>
     
 </body>
